@@ -9,15 +9,18 @@ class DemoApplicationTests {
 
 	@Test
 	void contextLoads() {
+		assert.true();
 	}
 
 	@Tag("fast")
 	@Test
 	void aSuperFastTest() {
+		assert.true();
 	}	
 	@Tag("fast")
 	@Test
 	void anotherSuperFastTest() {
+		assert.true();
 	}	
 	
 
@@ -25,5 +28,6 @@ class DemoApplicationTests {
 	@Tag("slow")
 	@Test
 	void aSuperSlowTest() {
+		assert.true();
 	}	
 }
