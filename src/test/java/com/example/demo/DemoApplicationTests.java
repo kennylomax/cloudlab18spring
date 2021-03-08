@@ -3,24 +3,25 @@ package com.example.demo;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.Tag;
 import org.springframework.boot.test.context.SpringBootTest;
+import static org.junit.Assert.assertTrue;
 
 @SpringBootTest
 class DemoApplicationTests {
 
 	@Test
 	void contextLoads() {
-		assert.true();
+		assertTrue(true);
 	}
 
 	@Tag("fast")
 	@Test
 	void aSuperFastTest() {
-		assert.true();
+		assertTrue(true);
 	}	
 	@Tag("fast")
 	@Test
 	void anotherSuperFastTest() {
-		assert.true();
+		assertTrue(true);
 	}	
 	
 
@@ -28,6 +29,6 @@ class DemoApplicationTests {
 	@Tag("slow")
 	@Test
 	void aSuperSlowTest() {
-		assert.true();
+		assertTrue(true);
 	}	
 }
