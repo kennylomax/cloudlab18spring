@@ -5,6 +5,7 @@
 plugins {
     id 'java'
     id 'maven-publish'
+    id 'org.sonarqube' version '3.0'
 }
 
 repositories {
@@ -36,3 +37,12 @@ publishing {
 tasks.withType(JavaCompile) {
     options.encoding = 'UTF-8'
 }
+
+
+sonarqube {
+    properties {
+        property 'sonar.host.url', 'http://localhost:9000'
+    }
+}
+
+tasks['sonarqube'].dependsOn test
