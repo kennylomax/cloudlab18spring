@@ -12,4 +12,12 @@ public class DemoApplication {
 		SpringApplication.run(DemoApplication.class, args);
 	}
 
+	
+	public static void bum(String[] args) {
+		int a;
+		int b=0;
+		
+	}
+
+	
 }
