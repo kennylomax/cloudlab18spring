@@ -6,6 +6,12 @@ pipeline {
     }
     stages {
 
+        stage('Build') {
+                    steps {
+                        sh './mvnw mvn install -DskipTests'   
+                    }
+                }
+
         stage("Fast JenkinsFile Tests") {
             parallel {
                 stage('Fast') {
